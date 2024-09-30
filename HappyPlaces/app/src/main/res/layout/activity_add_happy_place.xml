@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddHappyPlaceAct"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/purple_200"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/CustomToolBarStyle"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title EditText -->
+        <EditText
+            android:id="@+id/title_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/title"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <!-- Description EditText -->
+        <EditText
+            android:id="@+id/description_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/description"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <!-- Date EditText -->
+        <EditText
+            android:id="@+id/date_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/date"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <!-- Location EditText -->
+        <EditText
+            android:id="@+id/location_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/location"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/Select_curr"
+            android:text="SELECT CURRENT LOCATION"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/shape_button_rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:clipToOutline="true"
+            android:src="@drawable/places_to_visit_in_manali"
+            android:background="@drawable/shapeimagerounded"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@id/img_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:src="@drawable/upload_image"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_button_rounded"
+        android:text="SAVE"
+        android:textSize="20sp"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "4571096215",
+    "project_id": "fir-pushnoti-a432a",
+    "storage_bucket": "fir-pushnoti-a432a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4571096215:android:4a2a478e0245b2e8e775d2",
+        "android_client_info": {
+          "package_name": "com.example.notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMHxiJK3lni5GvkPuLOCh0ugePzBhOeQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

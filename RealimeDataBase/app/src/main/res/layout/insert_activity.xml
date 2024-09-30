@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Name"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Age"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/salary"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Salary"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SAVE"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

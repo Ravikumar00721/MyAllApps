@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1018197081592",
+    "project_id": "toketo-18c70",
+    "storage_bucket": "toketo-18c70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018197081592:android:4f3dc0cb7012c24e5f6a0d",
+        "android_client_info": {
+          "package_name": "msi.crool.toketo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGFxqrbpH7439Q_4VJGYlinOvAS-ThSBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

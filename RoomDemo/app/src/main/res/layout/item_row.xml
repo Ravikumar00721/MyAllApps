@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/main">
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textColor="#000000"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/email_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textColor="#000000"
+        android:layout_weight="2"/> <!-- Increased weight to allocate more space -->
+
+    <ImageView
+        android:id="@+id/edit_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/r_edit"
+        android:layout_marginStart="8dp"/> <!-- Added margin for better spacing -->
+
+    <ImageView
+        android:id="@+id/delete_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_delete_24"
+        android:layout_marginStart="8dp"/> <!-- Added margin for better spacing -->
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Allow FileProvider to access files in external app-specific directories -->
+    <external-files-path
+        name="camera_photos"
+        path="Pictures/" />
+</paths>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">32dp</dimen>
+    <dimen name="btn_radius">10dp</dimen>
+    <dimen name="image_boreder_stroke">10dp</dimen>
+
+</resources>

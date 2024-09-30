@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HappyPlaceDetail"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/back"
+    >
+
+    <ImageView
+        android:id="@+id/desc_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/places_to_visit_in_manali"/>
+    <TextView
+        android:id="@+id/desc_textviewIDOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Name"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="visible"
+        />
+    <TextView
+        android:id="@+id/desc_textviewIDTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No text Found Yet"
+        android:textColor="#1c1c1c"
+        android:textSize="20sp"
+        android:visibility="visible"
+        />
+    <Button
+        android:id="@+id/view_Map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW MAP"
+        android:background="@drawable/shape_button_rounded"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="25sp"/>
+</LinearLayout>

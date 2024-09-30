@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144590529382",
+    "project_id": "deebee-adec4",
+    "storage_bucket": "deebee-adec4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144590529382:android:d344b26987b56261595ea7",
+        "android_client_info": {
+          "package_name": "msi.crool.deebee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1Cm8-1vzSFxIKApQbQH5lMkG4NZ8wjaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

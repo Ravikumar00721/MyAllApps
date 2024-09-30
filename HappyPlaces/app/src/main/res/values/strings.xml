@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Happy Places</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="add_image">Add Image</string>
+    <string name="location">Location</string>
+    <string name="save">Save</string>
+    <string name="GoogleMapAPI">AIzaSyC95dAOFb3A5VRlnREpXccfJo9r4j5K-fs</string>
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".BMIActivity">
+
+    <RadioGroup
+        android:id="@+id/r_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radio_1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/w1_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.50"
+            android:background="@drawable/radio_2"
+            android:button="@null"
+            android:checked="true"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="METRIC UNITS"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <RadioButton
+            android:id="@+id/w2_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.50"
+            android:background="@drawable/radio_2"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="US UNITS"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_group"
+        android:id="@+id/weigth"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="#000000"
+        app:hintTextColor="#000000"
+      >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/w_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="WEIGHT (in KG)"
+            android:inputType="numberDecimal"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/height"
+        android:visibility="visible"
+        android:layout_margin="10dp"
+        android:layout_below="@id/weigth"
+        app:boxStrokeColor="#000000"
+        app:hintTextColor="#000000"
+   >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/h_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="HEIGHT (in CM)"
+            android:inputType="numberDecimal"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_group"
+        android:visibility="gone"
+        android:id="@+id/pounds"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="#000000"
+        app:hintTextColor="#000000"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/P_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WEIGHT (in pounds)"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/L_1"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/feet"
+            android:layout_margin="10dp"
+            android:layout_below="@id/weigth"
+            app:boxStrokeColor="#000000"
+            app:hintTextColor="#000000"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/f_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="FEET"
+                android:inputType="numberDecimal"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inches"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:boxStrokeColor="#000000"
+            app:hintTextColor="#000000"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/i_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="INCHES"
+                android:inputType="numberDecimal"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YOUR BMI"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/your_bmi"
+            android:gravity="center"
+            />
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XX"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/bmi_num"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXXXXXX"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/overweight"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xxx xxxxxx xxxxxx xxxxx"
+            android:textSize="20sp"
+            android:id="@+id/oops"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_bmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="CALCULATE"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</RelativeLayout>

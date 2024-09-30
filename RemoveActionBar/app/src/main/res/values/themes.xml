@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- styles.xml -->
+<resources>
+    <!-- Theme with no ActionBar -->
+    <style name="Theme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here -->
+    </style>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:colorControlNormal" >#00FFF8</item>
+    </style>
+
+</resources>

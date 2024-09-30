@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAME :"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:textColor="#706E6E"
+            android:layout_weight="5"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:hintTextColor="#53EC28"
+            app:boxStrokeColor="#53EC28"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMAIL:"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:textColor="#706E6E"
+            android:layout_weight="5"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:hintTextColor="#53EC28"
+            app:boxStrokeColor="#53EC28"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD RECORD"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="All the Inserted Records"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#706E6E" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItemList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/no_records"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="No Records Available"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:textColor="#706E6E" />
+</LinearLayout>
